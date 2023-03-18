@@ -1,0 +1,3 @@
+for n > 0, print: number is positive
+for n < 0, print: number is negative
+for n = 0, print: number is equal to zero
