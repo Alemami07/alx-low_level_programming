@@ -4,13 +4,12 @@
 
 /**
  *main - Entry point
- *return: Always 0 (success)
- *write a C program that gives a random number each time
+ *Return: Always 0 (success)
+ *Description: write a C program that gives a random number each time
  *and specifies wether number is positive or negative
  */
 
 int main(void)
-/*return value - 0 program ran successfully*/
 {
 	int n;
 
@@ -25,15 +24,15 @@ int main(void)
 
 	if (n > 0)
 	{
-		printf("%d n -number is positive\n, n");
+		printf("%d -number is positive\n", n);
 	}
 	else if (n < 0)
 	{
-		printf("%d n -number is negative\n, n");
+		printf("%d -number is negative\n", n);
 	}
 	else
 	{
-		printf("%d n,- number is equal to zero\n");
+		printf("%d -number is equal to zero\n", n);
 	}
 
 	return (0);
