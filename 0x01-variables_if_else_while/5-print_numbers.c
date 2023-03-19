@@ -7,21 +7,13 @@
 */
 
 int main(void)
+
 {
-	char ch;
-	ch != ('q');
-	ch != ('e');
+	int n;
 
-
-	for (ch = 'a'; ch <= 'z'; ch++) 
-	
-	{
-		putchar(ch);
-	}
-
-	{
+	for (n = 0; n <= 9; n++)
+		printf("%d", n);
 		putchar('\n');
-	}
 
 	return (0);
 }
