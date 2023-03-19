@@ -3,12 +3,10 @@
 /**
  *main - Entry point
  *Return: Always 0 (success)
- *Description: write a C program that gives a random number each time
- *and specifies wether number is positive or negative
+ *Description: write a C program that prints the alphabet in lowercase
 */
 
 int main(void)
-
 {
 	char ch;
 
@@ -20,4 +18,5 @@ int main(void)
 
 		putchar('\n');
 	}
+	return (0);
 }
