@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 /**
  *main - Entry point
  *Return: Always 0 (success)
@@ -7,21 +8,14 @@
 */
 
 int main(void)
+
 {
-	char ch;
-	ch != ('q');
-	ch != ('e');
+	int h;
 
-
-	for (ch = 'a'; ch <= 'z'; ch++) 
-	
+	for (h = 0; h <= 9; h++)
 	{
-		putchar(ch);
+		putchar(h);
 	}
-
-	{
 		putchar('\n');
-	}
-
 	return (0);
 }
