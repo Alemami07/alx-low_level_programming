@@ -1,21 +1,19 @@
 #include "main.h"
-#include <unistd.h>
 
 /**
- *main - Entry point
+ *print_alphabet - Entry point
  *Return: Always 0 (success)
  *Description: write a C program that prints _putchar
 */
 
-int main(void)
+void print_alphabet(void)
 {
-	char c;
+	char alpha;
 
-	for (c = 'a'; c <= 'z'; c++)
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
-		_putchar(c);
+		_putchar(alpha);
 	}
 		_putchar('\n');
 
-	return (0);
 }
