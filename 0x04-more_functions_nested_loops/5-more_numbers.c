@@ -10,7 +10,9 @@ void more_numbers(void)
 {
 	int n;
 
-	int c = 0;
+	int c;
+	
+	c = 0;
 
 	while (c <= 9)
 	{
@@ -19,6 +21,6 @@ void more_numbers(void)
 		_putchar(n);
 	}
 		_putchar('\n');
+		c++;
 	} 
-	c++;
 }
