@@ -3,7 +3,7 @@
 /**
  *_strlen - Entry point
  *Return: Always 0 (success)
- *@str: return value
+ *@s: return value
 */
 
 int _strlen(char *s)
@@ -16,6 +16,6 @@ int _strlen(char *s)
 	{
 		len++;
 	}
-	
+
 	return (len);
 }
