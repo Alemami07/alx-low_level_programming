@@ -1,30 +1,28 @@
 #include "main.h"
-
 /**
  *_strcat - Entry point
- *Return: dest;
- *@dest: destination file
- *@src: source file
+ *Return: dest
+ *@dest: destination string
+ *@src: source string
+ *Description: function that copies strings
 */
 char *_strcat(char *dest, char *src)
 {
-	int len, lon, i;
-	
-	i = 0;
-	len = 0;
-	lon = 0;
+	int p;
+	int q;
 
-	for (i = 0; dest[i] != '\0'; i++)
+	p = 0;
+	while (dest[p] != '\0')
 	{
-		len++;
+		p++;
 	}
-	for (i = 0; src[i] != '\0'; i++)
+	q = 0;
+	while (src[q] != '\0')
 	{
-		lon++;
+		p++;
+		q++;
 	}
-	{
-		dest[len + 1] = src[i];
-	}
-	return (dest);
+		dest[p] = '\0';
 
+		return (dest);
 }
