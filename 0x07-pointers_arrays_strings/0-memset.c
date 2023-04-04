@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  *_memset - Entry point
  *Return: string s
@@ -9,22 +8,14 @@
 */
 char *_memset(char *s, char b, unsigned int n)
 {
+	unsigned int p;
 
-	int u;
-	unsigned int put;
-
-	for (u = 0; s[u] != '\0'; u++)
+	p = 0;
+	while (p < n)
 	{
-		put++;
+		*(s + p) = b;
+		p++;
 	}
-
-	for (put = 0; put < n; put++)
-
-	{
-		s[put] = b;
-	}
-
-		s[put] = '\0';
 
 		return (s);
 }
