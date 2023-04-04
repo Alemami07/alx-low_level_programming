@@ -9,30 +9,20 @@
 */
 char *_strchr(char *s, char c)
 {
-	int t;
-	int q;
-	char *ptr;
-	char *ptr1;
-	int lent;
+	char *ptr, *ptr1;
+	char w;
+	int g;
 
-	lent = 0;
-	*ptr1 = s;
-	*ptr = '\0';
+	ptr1 = &w;
+	w = '\0';
 
-	for (t = 0; s[t] != '\0'; t++)
+	for (g = 0; s[g] != '\0'; g++)
 	{
-		lent++;
-	}
-	for (q = 0; q < lent; q++)
+	if (s[g] == c)
 	{
-	if 
-		(s[q] == c)
-	{
-		*ptr1 = s[q];
-		return (ptr1);
-	}
-	else
+		ptr = &s[g];
 		return (ptr);
 	}
-	return (s);
+	}
+		return (ptr1);
 }
