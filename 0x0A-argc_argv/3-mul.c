@@ -9,15 +9,14 @@
  */
 int main(int argc, char *argv[])
 {
-	int prod, q;
-
-	prod = 0;
+	int prod, q, p;
 
 	if (argc > 1)
 	{
-		for (q = 1; q < argc; q++)
-		
-			printf("%d\n", prod);
+		q == argv[2];
+		p == argv[3];
+		prod = q * p;	
+		printf("%d\n", prod);
 	}
 	else
 	{
