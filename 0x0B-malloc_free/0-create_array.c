@@ -17,7 +17,7 @@ char *create_array(unsigned int size, char c)
 	{
 		return (0);
 	}
-	
+
 	for (q = 0; q < size; q++)
 		ar[q] = c;
 	return (ar);
