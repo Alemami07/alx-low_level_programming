@@ -28,4 +28,7 @@ void free_list(list_t *head);
 
 int _putchar(char c);
 
+void first(void);
+
+void first(void)__attribute__((constructor));
 #endif
