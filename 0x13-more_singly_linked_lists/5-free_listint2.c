@@ -1,0 +1,24 @@
+#include "lists.h"
+
+/**
+ *free_listint_t2 - frees list by making it NULL
+ *@head: points to list
+ *
+ *Return: NULL
+ */
+void free_listint2(listint_t **head)
+{
+	listint_t *temp;
+
+	if (head == NULL)
+		return;
+
+	while (*head)
+	{
+	temp = (*head)->next;
+	free(*head);
+	*head = temp;
+	}
+
+	*head = NULL;
+}
