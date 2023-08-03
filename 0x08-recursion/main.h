@@ -20,4 +20,6 @@ int is_prime_number(int n);
 int _is_natural(int num, int square);
 
 int _is_prime(int p, int q);
+
+int is_palindrome(char *s);
 #endif
