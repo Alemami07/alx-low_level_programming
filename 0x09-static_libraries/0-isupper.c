@@ -5,7 +5,7 @@
  *Return: an int
  *Description: check for uppercase
 */
-int _isupper(char c)
+int _isupper(int c)
 {
 
 

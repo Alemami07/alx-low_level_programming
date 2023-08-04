@@ -4,7 +4,7 @@
  *@c: argument
  *Return: an int
 */
-int _isalpha(in c)
+int _isalpha(int c)
 {
 
 }
