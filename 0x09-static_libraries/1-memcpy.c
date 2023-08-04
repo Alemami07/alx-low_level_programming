@@ -2,11 +2,11 @@
 /**
  *_memcpy - copies memory content
  *@dest: destination string
- *@src: source 
+ *@src: source
  *@n: value
  *Return: a pointer
 */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	
+
 }

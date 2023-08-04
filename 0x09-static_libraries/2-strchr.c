@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+/**
  *_strchr - start
  *@s: string
  *@c: character

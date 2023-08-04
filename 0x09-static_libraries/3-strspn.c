@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+/**
  *_strspn - start
  *@s: first argument
  *@accept: second argument
