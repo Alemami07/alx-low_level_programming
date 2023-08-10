@@ -4,7 +4,7 @@
  *string_nconcat - concatenates strings up to the nth byte of second strinh
  *@s1: first string
  *@s2: second string
- *n: length of s2 to copy
+ *@n: length of s2 to copy
  *Return: pointer
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -23,9 +23,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (s2[q] != '\0')
 		l2++;
 	if (n < l2)
-		new = malloc(sizeof(char) * (l1 + n + 1));
+		new = malloc(sizeof(char *) * (l1 + n + 1));
 	else
-		new = malloc(sizeof(char) * (l1 + l2 + 1));
+		new = malloc(sizeof(char *) * (l1 + l2 + 1));
 
 	if (new == NULL)
 		return (NULL);
@@ -36,14 +36,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		p++;
 	}
 /*copying the specified bytes of the second string into the new string*/
-	while (n < l2 && p < l1 + n)
+	while (n < l2 && p < (l1 + n))
+	{
 		new[p++] = s2[q++];
-	while (n >= l2 && p < l1 +l2)
+	}
+	while (n >= l2 && p < (l1 + l2))
+	{
 		new[p++] = s2[q++];
+	}
 
-
-	new[p] = '\0';
+	new[p++] = '\0';
 
 	return (new);
-	
 }
