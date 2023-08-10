@@ -24,7 +24,7 @@ char *string_nconcat(char *s1, char *s2, unsugned int n)
 		l2++;
 	if (n < l2)
 		new = malloc(sizeof(char) * (l1 + n + 1));
-	else if (n >= l2)
+	else
 		new = malloc(sizeof(char) * (l1 + l2 + 1));
 
 	if (new == NULL)
@@ -36,11 +36,15 @@ char *string_nconcat(char *s1, char *s2, unsugned int n)
 		p++;
 	}
 /*copying the specified bytes of the second string into the new string*/
-	while (n < l2 && p < l1 + n)
-		new[p++] = s2[p++];
-	while (n >= l2 && p < l1 +l2)
-		new[p++] = s2[p++];
-	new[p] = '\0';
+	while (n < l2 && p < (l1 + n))
+	{
+		new[p++] = s2[q++];
+	}
+	while (n >= l2 && p < (l1 +l2))
+	{
+		new[p++] = s2[q++];
+	{
+	new[p++] = '\0';
 
 	return (new);
 	
