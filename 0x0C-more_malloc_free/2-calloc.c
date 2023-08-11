@@ -19,7 +19,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (arr == NULL)
 		return (NULL);
 	p = 0;
-	while (p < size)
+	while (p < nmemb * size)
 	{
 		arr[p] = 0;
 		p++;
