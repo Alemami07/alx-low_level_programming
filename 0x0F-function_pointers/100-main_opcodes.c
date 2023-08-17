@@ -31,9 +31,9 @@ int main(int argc, char *argv[])
 	{
 		if (j == byt - 1)
 		{
-			printf("%02x\n", bar[j]);
+			printf("%02hhx\n", bar[j]);
 		}
-		printf("%02x\n", bar[j]);
+		printf("%02hhx ", bar[j]);
 	}
 
 	return (0);
