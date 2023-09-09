@@ -17,7 +17,12 @@ int create_file(const char *filename, char *text_content)
 	if (filename == NULL)
 		return (-1);
 
-	sh = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+	while (text_content[len] != '\0')
+	{
+		len++;
+	}
+
+	sh = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 
 	if (sh == -1)
 		return (-1);
@@ -25,11 +30,6 @@ int create_file(const char *filename, char *text_content)
 	{
 		close(sh);
 		return (-1);
-	}
-
-	while (text_content[len] != '\0')
-	{
-		len++;
 	}
 
 	wr = write(sh, text_content, len);
